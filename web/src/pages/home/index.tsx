@@ -4,6 +4,7 @@ import FlowerList from '../../components/FlowerList';
 import { Flower } from '../../interfaces';
 import api from '../../services/api';
 import { ReactComponent as PlusIcon } from '../../assets/svg/mais.svg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 	const [flowers, setFlowers] = useState<Flower[]>([]);
@@ -18,7 +19,7 @@ const Home = () => {
 		<section className="listagem-container">
 			<header>
 				<h1>Listagem de Flores</h1>
-				<a href="/" className="add" title="Adicionar"><PlusIcon /></a>
+				<Link to="/create" className="add" title="Adicionar"><PlusIcon /></Link>
 			</header>
 			<FlowerList flowers={flowers} />
 		</section>

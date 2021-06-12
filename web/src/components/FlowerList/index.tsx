@@ -37,7 +37,7 @@ const FlowerListItem: React.FC<FlowerListItemProps> = ({ flower }) => {
 		<li>
 			<Link to={`/flower/${flower.id}`}>{flower.nome}</Link>
 			<div className="item-buttons">
-				<a href="/" className="edit" title="Editar"><PensilIcon /></a>
+				<Link to={`/edit/${flower.id}`} className="edit" title="Editar"><PensilIcon /></Link>
 				<button type="button" className="delete" title="Excluir"><TrashIcon /></button>
 			</div>
 		</li>
