@@ -3,4 +3,23 @@ nav {
     padding: var(--container-size);
     height: var(--nav-size);
     background: var(--grey-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        color: var(--grey-3);
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        a {
+            color: var(--grey-3);
+            text-decoration: none;
+            font-weight: 500;
+        }
+    }
 }
+//
