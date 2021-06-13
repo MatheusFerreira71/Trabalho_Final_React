@@ -1,0 +1,22 @@
+form {
+    padding: var(--container-size);
+    margin-top: 16px;
+
+    h1 {
+        text-align: center;
+    }
+
+    fieldset {
+        legend {
+            font-weight: 500;
+        }
+
+        .field {
+            padding: 16px;
+            label {
+                display: block;
+                margin: 8px 0;
+            }
+        }
+    }
+}

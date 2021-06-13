@@ -13,10 +13,6 @@ export interface Count {
     totalCount: number;
 }
 
-export interface FlowerListProps {
-    flowers: Flower[]
-}
-
 export interface FlowerListItemProps {
     flower: Flower;
 }

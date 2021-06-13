@@ -19,9 +19,9 @@ class FlowersController {
             const { id } = request.params;
             const flower = await knex('flowers').select('*').where({ id });
 
-            if (!flower) return response.status(404).send('Not Found');
+            if (!flower[0]) return response.status(404).send('Not Found');
 
-            return response.json(flower);
+            return response.json(flower[0]);
         } catch (error) {
             console.log(error);
             return response.status(500).send(error);

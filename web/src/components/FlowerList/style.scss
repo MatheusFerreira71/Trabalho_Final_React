@@ -21,6 +21,10 @@
                 font-weight: 500;
             }
 
+            &:hover {
+                background: rgba(0, 0, 0, 0.04);
+            }
+
             .item-buttons {
                 display: flex;
                 justify-content: space-between;
@@ -48,6 +52,7 @@
                     border: none;
                     background: var(--red-2);
                     color: var(--grey-3);
+
                     svg {
                         width: 16px;
                         height: 16px;
@@ -62,6 +67,7 @@
                 .edit {
                     background: var(--yellow-1);
                     color: var(--grey-1);
+
                     svg {
                         width: 20px;
                         height: 20px;
@@ -79,10 +85,30 @@
 .pagination-buttons {
     padding: var(--container-size);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
 
-    .numbers {
+    div {
+        cursor: pointer;
+
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 14px;
+
+        .active {
+            color: var(--red-1);
+        }
+
+        &:not(.numbers) {
+            width: 32px;
+            height: 32px;
+
+            &:hover {
+                color: var(--red-1);
+            }
+        }
     }
 }
