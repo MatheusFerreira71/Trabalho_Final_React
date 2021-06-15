@@ -1,0 +1,52 @@
+.cards-container {
+    padding: var(--container-size);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+
+    .dev-card {
+        display: flex;
+        flex-direction: column;
+        border: var(--border);
+        border-radius: 1rem;
+        padding: 2rem;
+        background: var(--grey-3);
+
+        img {
+            order: -1;
+            align-self: center;
+            height: 200px;
+            width: auto;
+            border-radius: 1rem;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 8px 0;
+        }
+
+        ul {
+            margin: 8px 0;
+            font-size: 0.9rem;
+            color: var(--grey-1);
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            background: var(--dark-1);
+            border-radius: 1rem;
+            padding: 6px 0;
+            transition: filter 200ms ease;
+
+            svg {
+                fill: var(--grey-3);
+            }
+
+            &:hover {
+                filter: brightness(1.4);
+            }
+        }
+    }
+}

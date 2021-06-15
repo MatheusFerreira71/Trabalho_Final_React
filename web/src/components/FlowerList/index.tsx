@@ -4,7 +4,6 @@ import { Count, FlowerListItemProps } from '../../interfaces';
 import { Flower } from '../../interfaces';
 import api from '../../services/api';
 import './style.scss';
-import { ReactComponent as TrashIcon } from '../../assets/svg/lixeira.svg';
 import { ReactComponent as PensilIcon } from '../../assets/svg/lapis.svg';
 
 const FlowerList = () => {
@@ -104,12 +103,12 @@ const FlowerList = () => {
 }
 
 const FlowerListItem: React.FC<FlowerListItemProps> = ({ flower }) => {
+
   return (
     <li>
       <Link to={`/flower/${flower.id}`}>{flower.nome}</Link>
       <div className="item-buttons">
         <Link to={`/edit/${flower.id}`} className="edit" title="Editar"><PensilIcon /></Link>
-        <button type="button" className="delete" title="Excluir"><TrashIcon /></button>
       </div>
     </li>
   );

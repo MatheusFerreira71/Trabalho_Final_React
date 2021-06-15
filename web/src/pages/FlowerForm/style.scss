@@ -1,5 +1,6 @@
 form {
     padding: var(--container-size);
+    padding-top: 8rem;
     margin-top: 16px;
     display: flex;
     height: 70vh;
@@ -12,7 +13,7 @@ form {
     }
 
     fieldset {
-        width: 400px;
+        
         legend {
             font-weight: 500;
         }
@@ -66,7 +67,7 @@ form {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 80%;
+            width: 85%;
             padding: 16px;
 
             .save {
