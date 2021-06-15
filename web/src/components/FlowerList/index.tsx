@@ -91,8 +91,8 @@ const FlowerList = () => {
         </div>
         <div className="next" onClick={next}>&gt;</div>
         <div className="last" onClick={() => goTo(totalPages)}>&#187;</div>
-        <select onChange={handleItemsPerPageChange}>
-          <option value="5" selected>5</option>
+        <select defaultValue="5" onChange={handleItemsPerPageChange}>
+          <option value="5">5</option>
           <option value="10">10</option>
           <option value="15">15</option>
           <option value="25">25</option>
