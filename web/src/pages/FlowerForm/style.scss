@@ -51,7 +51,6 @@ form {
                 min-width: 250px;
                 font-size: 0.9rem;
 
-
                 &:focus-visible {
                     outline: none;
                 }
@@ -61,18 +60,33 @@ form {
                     color: var(--grey-1);
                 }
             }
+        }
+
+        .action-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            padding: 16px;
+
+            .save {
+                background: var(--green-1);
+            }
+
+            .cancel {
+                background: var(--red-2);
+            }
 
             button {
                 border: none;
                 border-radius: 4px;
-                background: var(--green-1);
                 padding: 8px;
                 color: var(--grey-3);
                 cursor: pointer;
                 transition: filter 200ms ease;
-                min-width: 250px;
                 font-weight: 500;
                 font-size: 1rem;
+                width: 100px;
 
                 &:hover {
                     filter: brightness(1.2);

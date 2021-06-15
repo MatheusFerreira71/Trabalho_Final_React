@@ -6,9 +6,14 @@
     header {
         display: flex;
         justify-content: flex-end;
+
+        h1 {
+            margin-left: auto;
+        }
+        
         .add {
             display: flex;
-            margin-left: 35%;
+            margin-left: auto;
             align-items: center;
             justify-content: center;
             background: var(--green-1);
